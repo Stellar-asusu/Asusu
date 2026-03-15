@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "contracts/budget-manager",
+    "contracts/savings-vault",
+]
+resolver = "2"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+panic = "abort"
+codegen-units = 1
